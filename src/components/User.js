@@ -36,7 +36,7 @@ const User = () => {
             <br />
             <br />
             <div>
-                <Button variant="outline-secondary" className="mr-5" onClick={() => setChangePass(true)}>Change Password</Button>
+                {!changePass ? <Button variant="outline-secondary" className="mr-5" onClick={() => setChangePass(true)}>Change Password</Button> : <Button variant="outline-secondary" className="mr-5">Save Password</Button>}
                 <Button variant="outline-secondary">Logout</Button>
             </div>
         </div>
